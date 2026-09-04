@@ -5,6 +5,15 @@ export interface Procedure {
   categoryLabel: string;
   description: string;
   benefits: string[];
+  details: {
+    headline: string;
+    intro: string;
+    reasonsTitle: string;
+    reasons: string[];
+    experienceTitle: string;
+    experience: string;
+    closing: string;
+  };
   imageUrl: string;
   recommendedSessions?: string;
   whatsappMessage: string;

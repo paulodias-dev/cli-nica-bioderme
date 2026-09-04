@@ -26,6 +26,23 @@ export const PROCEDURES: Procedure[] = [
       'Renovação celular e toque aveludado',
       'Prevenção de acnes e envelhecimento precoce'
     ],
+    details: {
+      headline: 'Por que escolher a Limpeza de Pele Bioderme?',
+      intro:
+        'A limpeza de pele da Bioderme foi pensada para remover impurezas, células mortas e cravos, deixando a pele mais saudável, suave e radiante.',
+      reasonsTitle: 'Diferenciais do procedimento',
+      reasons: [
+        'Equipe treinada em cuidados com a pele e protocolos personalizados.',
+        'Uso de produtos de alta qualidade para nutrir, revitalizar e proteger.',
+        'Tratamento adaptado às necessidades específicas de cada tipo de pele.',
+        'Ambiente tranquilo para transformar o cuidado facial em um momento de autocuidado.'
+      ],
+      experienceTitle: 'Depois da sessão',
+      experience:
+        'A pele tende a apresentar textura mais suave, aparência mais clara e sensação renovada, destacando a beleza natural.',
+      closing:
+        'Agende sua limpeza de pele e comece sua jornada para uma pele mais saudável, radiante e revitalizada.'
+    },
     imageUrl: '/assets/procedures/limpeza-de-pele.png',
     recommendedSessions: 'Mensal ou bimestral',
     whatsappMessage:
@@ -44,6 +61,23 @@ export const PROCEDURES: Procedure[] = [
       'Tratamento não invasivo, sem cortes ou cirurgia',
       'Retorno imediato às atividades rotineiras'
     ],
+    details: {
+      headline: 'Transforme seu corpo com a Criolipólise',
+      intro:
+        'A Criolipólise é um tratamento corporal voltado para redução de gordura localizada por meio do resfriamento controlado das células adiposas.',
+      reasonsTitle: 'Por que escolher a Criolipólise Bioderme?',
+      reasons: [
+        'Tecnologia avançada para resultados visíveis e duradouros.',
+        'Plano de tratamento personalizado para cada região e objetivo.',
+        'Procedimento sem cirurgia e sem tempo de recuperação prolongado.',
+        'Acompanhamento de uma equipe treinada em estética corporal.'
+      ],
+      experienceTitle: 'Confiança no próprio corpo',
+      experience:
+        'O protocolo ajuda a esculpir áreas específicas e pode permitir retorno imediato às atividades diárias após a aplicação.',
+      closing:
+        'Agende sua avaliação para entender quais áreas podem ser tratadas e qual protocolo combina melhor com seu objetivo.'
+    },
     imageUrl: '/assets/procedures/criolipolise.png',
     recommendedSessions: '1 a 3 sessões por região',
     whatsappMessage:
@@ -62,6 +96,23 @@ export const PROCEDURES: Procedure[] = [
       'Adeus à foliculite e manchas causadas por lâminas',
       'Pele lisa, macia e sem irritação constante'
     ],
+    details: {
+      headline: 'Depilação a Laser com conforto e segurança',
+      intro:
+        'A depilação a laser reduz progressivamente os pelos indesejados e ajuda a melhorar queixas comuns como foliculite, manchas e irritações causadas por lâmina ou cera.',
+      reasonsTitle: 'O que torna o protocolo especial',
+      reasons: [
+        'Avaliação inicial para definir áreas, frequência e cuidados.',
+        'Tecnologia de alta eficácia com foco em segurança e conforto.',
+        'Indicação para diferentes regiões do rosto e do corpo.',
+        'Acompanhamento para orientar preparo da pele e manutenção dos resultados.'
+      ],
+      experienceTitle: 'Mais praticidade no dia a dia',
+      experience:
+        'Com as sessões corretas, a pele tende a ficar mais lisa e com menos irritação, trazendo liberdade na rotina.',
+      closing:
+        'Fale com a Bioderme para montar um pacote de sessões adequado para sua pele e sua necessidade.'
+    },
     imageUrl: '/assets/procedures/depilacao-a-laser.png',
     recommendedSessions: 'Pacote personalizado (6 a 10 sessões)',
     whatsappMessage:
@@ -80,6 +131,23 @@ export const PROCEDURES: Procedure[] = [
       'Combinação de tecnologias consagradas e drenagens',
       'Potencialização dos resultados com acompanhamento'
     ],
+    details: {
+      headline: 'Redução de medidas com protocolo sob medida',
+      intro:
+        'A redução de medidas combina técnicas corporais para auxiliar na modelagem, diminuição de centímetros e melhora do contorno corporal.',
+      reasonsTitle: 'Como a Bioderme conduz o cuidado',
+      reasons: [
+        'Análise do biotipo corporal e dos objetivos reais de cada paciente.',
+        'Combinação de tecnologias e manobras corporais de acordo com a necessidade.',
+        'Plano por etapas para acompanhar evolução e resposta do organismo.',
+        'Orientações para potencializar e manter os resultados.'
+      ],
+      experienceTitle: 'Modelagem com acompanhamento',
+      experience:
+        'O foco é trabalhar regiões estratégicas com constância, segurança e metas realistas para cada corpo.',
+      closing:
+        'Agende uma avaliação para conhecer o protocolo mais indicado para seu objetivo.'
+    },
     imageUrl: '/assets/procedures/reducao-de-medidas.png',
     recommendedSessions: 'Protocolos de 5 a 10 sessões',
     whatsappMessage:
@@ -98,6 +166,23 @@ export const PROCEDURES: Procedure[] = [
       'Uniformização do tom da pele e fechamento dos poros',
       'Drug delivery com ativos específicos de alta pureza'
     ],
+    details: {
+      headline: 'Revele sua beleza natural com Microagulhamento',
+      intro:
+        'O Microagulhamento é uma técnica para melhorar textura, reduzir imperfeições e estimular a produção de colágeno.',
+      reasonsTitle: 'Benefícios destacados pela Bioderme',
+      reasons: [
+        'Pode suavizar cicatrizes de acne, rugas finas e poros dilatados.',
+        'Ajuda no rejuvenescimento e na melhora da firmeza da pele.',
+        'Tratamento personalizado conforme as necessidades de cada paciente.',
+        'Procedimento conduzido com foco em conforto, segurança e qualidade.'
+      ],
+      experienceTitle: 'Renovação da pele',
+      experience:
+        'O protocolo busca restaurar a aparência saudável da pele, valorizando textura, viço e confiança.',
+      closing:
+        'Agende sua sessão de Microagulhamento e inicie um cuidado facial mais profundo e personalizado.'
+    },
     imageUrl: '/assets/procedures/microagulhamento.png',
     recommendedSessions: '3 a 5 sessões espaçadas',
     whatsappMessage:
@@ -116,6 +201,23 @@ export const PROCEDURES: Procedure[] = [
       'Ação direta no tecido fibroso e retenção hídrica',
       'Pele visivelmente mais lisa e uniforme'
     ],
+    details: {
+      headline: 'Despeça-se das celulites com a Bioderme',
+      intro:
+        'O tratamento de redução de celulite foi desenvolvido para ajudar na aparência de uma pele mais lisa, uniforme e confiante.',
+      reasonsTitle: 'Por que escolher esse tratamento?',
+      reasons: [
+        'Tecnologias e técnicas voltadas para tratar a celulite de forma eficaz.',
+        'Abordagem personalizada para as necessidades de cada paciente.',
+        'Melhora visível na textura da pele e na aparência das celulites.',
+        'Procedimento sem tempo de recuperação prolongado.'
+      ],
+      experienceTitle: 'Pele mais lisa e firme',
+      experience:
+        'O tratamento pode ajudar a suavizar a pele, melhorar a circulação e restaurar a firmeza da região tratada.',
+      closing:
+        'Agende sua avaliação para montar um plano de cuidado corporal focado nas suas queixas.'
+    },
     imageUrl: '/assets/procedures/reducao-de-celulites.png',
     recommendedSessions: 'Protocolo de 8 a 10 sessões',
     whatsappMessage:
@@ -134,6 +236,23 @@ export const PROCEDURES: Procedure[] = [
       'Resultados visíveis em poucas semanas',
       'Indicado para flancos, papada, abdômen e culotes'
     ],
+    details: {
+      headline: 'Tratamentos com enzimas para gordura localizada',
+      intro:
+        'Os tratamentos com enzimas são uma opção versátil para trabalhar diferentes preocupações estéticas e realçar a beleza natural.',
+      reasonsTitle: 'Diferenciais do protocolo',
+      reasons: [
+        'Técnicas atuais com foco em resultados visíveis e seguros.',
+        'Tratamentos montados de acordo com a necessidade de cada paciente.',
+        'Aplicação direcionada para regiões específicas do corpo.',
+        'Recuperação geralmente simples, com orientações individualizadas.'
+      ],
+      experienceTitle: 'Resultados personalizados',
+      experience:
+        'A proposta é tratar áreas localizadas com planejamento cuidadoso, respeitando objetivos e características individuais.',
+      closing:
+        'Converse com a equipe Bioderme para avaliar se o tratamento com enzimas é indicado para você.'
+    },
     imageUrl: '/assets/procedures/enzimas-gordura.png',
     recommendedSessions: 'Sessões quinzenais personalizadas',
     whatsappMessage:
@@ -152,6 +271,23 @@ export const PROCEDURES: Procedure[] = [
       'Procedimento rápido e realizado em consultório',
       'Sem necessidade de repouso prolongado'
     ],
+    details: {
+      headline: 'Recupere a beleza da pele com Tratamento de Microvasos',
+      intro:
+        'O tratamento de microvasos busca melhorar a aparência de pequenos vasos sanguíneos visíveis e recuperar a confiança com a pele.',
+      reasonsTitle: 'Por que escolher o tratamento na Bioderme?',
+      reasons: [
+        'Uso de tecnologias e técnicas seguras para tratar microvasos.',
+        'Equipe treinada para conduzir o procedimento com cuidado.',
+        'Tratamento personalizado conforme a pele e a região avaliada.',
+        'Procedimento geralmente sem necessidade de recuperação prolongada.'
+      ],
+      experienceTitle: 'Aspecto mais uniforme',
+      experience:
+        'O cuidado ajuda a reduzir ou eliminar a aparência dos pequenos vasos, contribuindo para uma pele mais uniforme e saudável.',
+      closing:
+        'Agende sua avaliação para verificar indicação, cuidados e número de sessões.'
+    },
     imageUrl: '/assets/procedures/tratamento-microvasos.png',
     recommendedSessions: 'Avaliação clínica prévia',
     whatsappMessage:
