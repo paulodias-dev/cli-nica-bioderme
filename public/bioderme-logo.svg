@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" fill="none">
+  <!-- Petals / Botanical Emblem -->
+  <g transform="translate(18, 12)">
+    <!-- Left petal -->
+    <path d="M42 58 C28 55, 12 40, 14 20 C18 10, 30 2, 38 0 C32 14, 38 28, 44 42 C45 48, 44 54, 42 58 Z" fill="#992662" />
+    <path d="M40 54 C30 50, 20 38, 22 22 C26 14, 34 6, 38 2 C34 14, 38 26, 42 38 Z" fill="#b02e73" opacity="0.85" />
+    <!-- Right petal -->
+    <path d="M40 50 C44 32, 54 20, 72 16 C86 13, 98 18, 102 24 C90 28, 80 38, 70 48 C60 58, 48 56, 40 50 Z" fill="#7d1e4e" />
+    <path d="M46 46 C52 32, 64 22, 80 19 C90 17, 98 22, 100 24 C88 28, 78 36, 70 44 C62 52, 52 50, 46 46 Z" fill="#9f2563" opacity="0.9" />
+    <!-- Center delicate highlight -->
+    <path d="M38 35 C42 28, 50 25, 60 26 C52 30, 46 36, 42 42 Z" fill="#d45293" opacity="0.6" />
+  </g>
+
+  <!-- Typography: Bioderme -->
+  <g transform="translate(6, 118)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', 'Inter', 'Century Gothic', -apple-system, sans-serif" font-size="52" font-weight="400" letter-spacing="-0.5" fill="#8f245c">
+      Bio<tspan fill="#8f245c" font-weight="300">derme</tspan>
+    </text>
+  </g>
+
+  <!-- Subtitle: Estética & Bem Estar -->
+  <g transform="translate(52, 145)">
+    <text x="56" y="0" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="14" font-weight="400" letter-spacing="2.5" fill="#3a3f47">
+      Estética &amp; Bem Estar
+    </text>
+  </g>
+</svg>

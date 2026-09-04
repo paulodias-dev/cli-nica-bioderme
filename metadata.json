@@ -1,0 +1,8 @@
+{
+  "name": "Clínica Bioderme",
+  "description": "Clínica de Estética Avançada e Depilação a Laser em Anápolis/GO (Adriana Parque e Jaiara). Tratamentos faciais, corporais e bem-estar desde 2015.",
+  "author": "Fluxo Sistemas",
+  "website": "https://fluxosistemas.com.br",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
