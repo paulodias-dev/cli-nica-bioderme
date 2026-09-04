@@ -15,6 +15,7 @@ import { FaqSection } from './components/FaqSection';
 import { LocationContactSection } from './components/LocationContactSection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { ScrollToTop } from './components/ScrollToTop';
 
 export default function App() {
   return (
@@ -51,6 +52,9 @@ export default function App() {
 
       {/* Botão Flutuante de Alta Conversão do WhatsApp */}
       <FloatingWhatsApp />
+
+      {/* Botão para voltar ao topo */}
+      <ScrollToTop />
     </div>
   );
 }
