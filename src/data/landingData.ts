@@ -26,8 +26,7 @@ export const PROCEDURES: Procedure[] = [
       'Renovação celular e toque aveludado',
       'Prevenção de acnes e envelhecimento precoce'
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/assets/procedures/limpeza-de-pele.png',
     recommendedSessions: 'Mensal ou bimestral',
     whatsappMessage:
       'Olá! Gostaria de agendar uma avaliação para Limpeza de Pele na Clínica Bioderme.'
@@ -45,8 +44,7 @@ export const PROCEDURES: Procedure[] = [
       'Tratamento não invasivo, sem cortes ou cirurgia',
       'Retorno imediato às atividades rotineiras'
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1512290900672-1f5be4d9c490?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/assets/procedures/criolipolise.png',
     recommendedSessions: '1 a 3 sessões por região',
     whatsappMessage:
       'Olá! Gostaria de saber mais sobre a Criolipólise e agendar minha avaliação na Clínica Bioderme.'
@@ -64,8 +62,7 @@ export const PROCEDURES: Procedure[] = [
       'Adeus à foliculite e manchas causadas por lâminas',
       'Pele lisa, macia e sem irritação constante'
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/assets/procedures/depilacao-a-laser.png',
     recommendedSessions: 'Pacote personalizado (6 a 10 sessões)',
     whatsappMessage:
       'Olá! Quero agendar uma sessão ou avaliação de Depilação a Laser na Clínica Bioderme.'
@@ -83,8 +80,7 @@ export const PROCEDURES: Procedure[] = [
       'Combinação de tecnologias consagradas e drenagens',
       'Potencialização dos resultados com acompanhamento'
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/assets/procedures/reducao-de-medidas.png',
     recommendedSessions: 'Protocolos de 5 a 10 sessões',
     whatsappMessage:
       'Olá! Tenho interesse no protocolo de Redução de Medidas. Gostaria de agendar uma avaliação!'
@@ -102,8 +98,7 @@ export const PROCEDURES: Procedure[] = [
       'Uniformização do tom da pele e fechamento dos poros',
       'Drug delivery com ativos específicos de alta pureza'
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/assets/procedures/microagulhamento.png',
     recommendedSessions: '3 a 5 sessões espaçadas',
     whatsappMessage:
       'Olá! Gostaria de agendar uma avaliação de Microagulhamento na Clínica Bioderme.'
@@ -121,8 +116,7 @@ export const PROCEDURES: Procedure[] = [
       'Ação direta no tecido fibroso e retenção hídrica',
       'Pele visivelmente mais lisa e uniforme'
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/assets/procedures/reducao-de-celulites.png',
     recommendedSessions: 'Protocolo de 8 a 10 sessões',
     whatsappMessage:
       'Olá! Gostaria de informações sobre o tratamento para Redução de Celulites na Clínica Bioderme.'
@@ -140,8 +134,7 @@ export const PROCEDURES: Procedure[] = [
       'Resultados visíveis em poucas semanas',
       'Indicado para flancos, papada, abdômen e culotes'
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/assets/procedures/enzimas-gordura.png',
     recommendedSessions: 'Sessões quinzenais personalizadas',
     whatsappMessage:
       'Olá! Gostaria de saber mais sobre as Enzimas para Gordura Localizada e agendar minha avaliação.'
@@ -159,8 +152,7 @@ export const PROCEDURES: Procedure[] = [
       'Procedimento rápido e realizado em consultório',
       'Sem necessidade de repouso prolongado'
     ],
-    imageUrl:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/assets/procedures/tratamento-microvasos.png',
     recommendedSessions: 'Avaliação clínica prévia',
     whatsappMessage:
       'Olá! Gostaria de agendar uma avaliação para Tratamento de Microvasos na Clínica Bioderme.'
@@ -282,25 +274,21 @@ export const RESULTS: ResultItem[] = [
     category: 'corporal',
     description:
       'Remodelação da linha de cintura e queima de gordura localizada com associação de protocolos exclusivos.',
-    beforeImg:
-      'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80',
-    afterImg:
-      'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80',
+    beforeImg: '/assets/results/reducao-abdominal-antes.jpg',
+    afterImg: '/assets/results/reducao-abdominal-depois.jpg',
     sessions: '6 Sessões',
     tag: 'Redução Abdominal'
   },
   {
     id: 'res-2',
-    title: 'Depilação a Laser Definitiva',
-    category: 'laser',
+    title: 'Modelagem Corporal',
+    category: 'corporal',
     description:
-      'Eliminação de foliculite, clareamento da região e remoção definitiva dos pelos sem dor.',
-    beforeImg:
-      'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=600&q=80',
-    afterImg:
-      'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=600&q=80',
-    sessions: '8 Sessões',
-    tag: 'Laser Sem Dor'
+      'Evolução de contorno corporal com protocolo personalizado e acompanhamento da equipe Bioderme.',
+    beforeImg: '/assets/results/modelagem-corporal-antes.jpg',
+    afterImg: '/assets/results/modelagem-corporal-depois.jpg',
+    sessions: 'Protocolo Personalizado',
+    tag: 'Contorno Corporal'
   },
   {
     id: 'res-3',
@@ -308,25 +296,21 @@ export const RESULTS: ResultItem[] = [
     category: 'facial',
     description:
       'Desobstrução profunda dos poros, alívio de comedões e renovação do viço e luminosidade.',
-    beforeImg:
-      'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80',
-    afterImg:
-      'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80',
+    beforeImg: '/assets/results/limpeza-facial-antes.jpg',
+    afterImg: '/assets/results/limpeza-facial-depois.jpg',
     sessions: 'Sessão Única + Manutenção',
     tag: 'Pele Saudável'
   },
   {
     id: 'res-4',
-    title: 'Criolipólise Avançada',
+    title: 'Redução de Medidas nas Costas',
     category: 'corporal',
     description:
-      'Eliminação seletiva de gordura nos flancos e abdômen com congelamento de alta precisão.',
-    beforeImg:
-      'https://images.unsplash.com/photo-1512290900672-1f5be4d9c490?auto=format&fit=crop&w=600&q=80',
-    afterImg:
-      'https://images.unsplash.com/photo-1512290900672-1f5be4d9c490?auto=format&fit=crop&w=600&q=80',
-    sessions: '2 Ciclos de Aplicação',
-    tag: 'Gordura Localizada'
+      'Melhora visível no contorno das costas com associação de técnicas corporais e protocolo sob medida.',
+    beforeImg: '/assets/results/reducao-medidas-costas-antes.jpg',
+    afterImg: '/assets/results/reducao-medidas-costas-depois.jpg',
+    sessions: 'Protocolo Personalizado',
+    tag: 'Medidas & Contorno'
   }
 ];
 

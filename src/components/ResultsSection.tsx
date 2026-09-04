@@ -32,7 +32,6 @@ export const ResultsSection: React.FC = () => {
           {[
             { id: 'all', label: 'Todos os Casos' },
             { id: 'corporal', label: 'Corporal & Medidas' },
-            { id: 'laser', label: 'Depilação a Laser' },
             { id: 'facial', label: 'Pele & Facial' }
           ].map((cat) => (
             <button

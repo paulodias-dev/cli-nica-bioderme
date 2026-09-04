@@ -84,7 +84,7 @@ export const HeroSection: React.FC = () => {
               {/* Main Image Container */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-stone-100">
                 <img
-                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=85"
+                  src="/assets/hero-bioderme.png"
                   alt="Clínica Bioderme - Tratamentos de Estética Avançada e Bem-Estar em Anápolis"
                   className="w-full h-[420px] sm:h-[480px] object-cover object-center"
                   loading="eager"
