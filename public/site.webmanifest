@@ -1,0 +1,15 @@
+{
+  "name": "Clínica Bioderme",
+  "short_name": "Bioderme",
+  "description": "Estética avançada e depilação a laser em Anápolis.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F5",
+  "theme_color": "#8f245c",
+  "icons": [{
+    "src": "/favicon.svg",
+    "sizes": "64x64",
+    "type": "image/svg+xml",
+    "purpose": "any"
+  }]
+}
