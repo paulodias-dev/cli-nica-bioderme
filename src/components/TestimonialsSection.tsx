@@ -159,7 +159,7 @@ export const TestimonialsSection: React.FC = () => {
         {/* Bottom Proof CTA */}
         <div className="mt-12 text-center">
           <p className="text-stone-600 text-sm mb-4">
-            Junte-se a centenas de pacientes com resultados comprovados em Anápolis.
+            Junte-se a centenas de pacientes que compartilham suas experiências com a Bioderme em Anápolis.
           </p>
           <a
             href={createWhatsAppUrl('Olá! Li os depoimentos e quero agendar minha avaliação na Clínica Bioderme.')}

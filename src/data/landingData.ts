@@ -53,12 +53,12 @@ export const PROCEDURES: Procedure[] = [
     category: 'corporal',
     categoryLabel: 'Corporal',
     description:
-      'A Criolipólise é projetada para eliminar as gorduras indesejadas por meio do resfriamento controlado de células adiposas.',
+      'A Criolipólise é um protocolo voltado à redução de gordura localizada por meio do resfriamento controlado de células adiposas, sempre após avaliação individual.',
     benefits: [
-      'Destruição seletiva e segura das células de gordura',
-      'Resultados visíveis nas áreas tratadas',
+      'Ação direcionada na região avaliada',
+      'Possível redução de gordura localizada após o protocolo indicado',
       'Tratamento não invasivo, sem cortes ou cirurgia',
-      'Retorno imediato às atividades rotineiras'
+      'Orientações individualizadas para o período após a aplicação'
     ],
     details: {
       headline: 'Transforme seu corpo com a Criolipólise',
@@ -66,14 +66,14 @@ export const PROCEDURES: Procedure[] = [
         'A Criolipólise é um tratamento corporal voltado para redução de gordura localizada por meio do resfriamento controlado das células adiposas.',
       reasonsTitle: 'Por que escolher a Criolipólise Bioderme?',
       reasons: [
-        'Tecnologia avançada para resultados visíveis e duradouros.',
+        'Tecnologia avançada com expectativas alinhadas à avaliação individual.',
         'Plano de tratamento personalizado para cada região e objetivo.',
         'Procedimento sem cirurgia e sem tempo de recuperação prolongado.',
         'Acompanhamento de uma equipe treinada em estética corporal.'
       ],
       experienceTitle: 'Confiança no próprio corpo',
       experience:
-        'O protocolo ajuda a esculpir áreas específicas e pode permitir retorno imediato às atividades diárias após a aplicação.',
+        'O protocolo pode auxiliar no contorno de áreas específicas. O retorno às atividades deve seguir as orientações da equipe após a avaliação.',
       closing:
         'Agende sua avaliação para entender quais áreas podem ser tratadas e qual protocolo combina melhor com seu objetivo.'
     },
@@ -87,12 +87,12 @@ export const PROCEDURES: Procedure[] = [
     category: 'laser',
     categoryLabel: 'Laser Avançado',
     description:
-      'Procedimento seguro e eficaz para a remoção de pelos indesejados. Utilizamos tecnologia de ponta para direcionar a energia do laser às áreas-alvo, resultando em redução significativa e duradoura.',
+      'Procedimento realizado com tecnologia a laser para promover a redução progressiva dos pelos indesejados, de acordo com as características de cada pele e pelo.',
     benefits: [
-      'Tecnologia de alta eficácia com máxima segurança',
-      'Resultados duradouros na redução dos pelos',
-      'Adeus à foliculite e manchas causadas por lâminas',
-      'Pele lisa, macia e sem irritação constante'
+      'Tecnologia direcionada às áreas avaliadas',
+      'Redução progressiva dos pelos ao longo do protocolo',
+      'Pode auxiliar na melhora da foliculite e das irritações causadas por lâminas',
+      'Pele com aparência mais lisa e confortável ao longo do tratamento'
     ],
     details: {
       headline: 'Depilação a Laser com conforto e segurança',
@@ -159,7 +159,7 @@ export const PROCEDURES: Procedure[] = [
     benefits: [
       'Estímulo potente de colágeno e elastina',
       'Atenuação de cicatrizes de acne e linhas finas',
-      'Uniformização do tom da pele e fechamento dos poros',
+      'Uniformização do tom e aparência menos evidente dos poros',
       'Melhora da textura e da firmeza da pele'
     ],
     details: {
@@ -189,7 +189,7 @@ export const PROCEDURES: Procedure[] = [
     category: 'corporal',
     categoryLabel: 'Corporal',
     description:
-      'Diminua a aparência da celulite e conquiste uma pele mais suave e firme utilizando técnicas comprovadas que visam as causas subjacentes.',
+      'Protocolo corporal personalizado para suavizar a aparência da celulite e contribuir para uma pele com textura mais uniforme e firme.',
     benefits: [
       'Melhora da microcirculação sanguínea e linfática',
       'Estímulo de firmeza e redução do aspecto "casca de laranja"',
@@ -359,7 +359,7 @@ export const PROCEDURES: Procedure[] = [
     category: 'corporal',
     categoryLabel: 'Corporal',
     description:
-      'A drenagem linfática é uma técnica suave que estimula o sistema linfático, ajudando a eliminar toxinas, reduzir a retenção de líquidos e melhorar a circulação.',
+      'A drenagem linfática é uma técnica suave que estimula o sistema linfático e pode auxiliar na redução da retenção de líquidos, promovendo sensação de leveza e bem-estar.',
     benefits: [
       'Estímulo do sistema linfático',
       'Auxílio na redução da retenção de líquidos',
@@ -492,7 +492,7 @@ export const DIFFERENTIALS: Differential[] = [
     title: 'Protocolos Exclusivos',
     subtitle: 'Desde 2015 em Anápolis',
     description:
-      'Mais de 8 anos combinando as melhores tecnologias do mercado a técnicas consagradas para resultados visíveis, seguros e duradouros.',
+      'Desde 2015, combinamos tecnologias e técnicas selecionadas com atendimento personalizado, segurança e expectativas realistas para cada protocolo.',
     icon: 'ShieldCheck'
   }
 ];
@@ -503,7 +503,7 @@ export const RESULTS: ResultItem[] = [
     title: 'Redução de Medidas & Abdômen',
     category: 'corporal',
     description:
-      'Remodelação da linha de cintura e queima de gordura localizada com associação de protocolos exclusivos.',
+      'Remodelação da linha de cintura e auxílio na redução de gordura localizada com associação de protocolos personalizados.',
     beforeImg: '/assets/results/reducao-abdominal-antes.jpg',
     afterImg: '/assets/results/reducao-abdominal-depois.jpg',
     sessions: '6 Sessões',
@@ -546,14 +546,14 @@ export const RESULTS: ResultItem[] = [
 
 export const CLINIC_HIGHLIGHTS = [
   {
-    number: '+8',
-    label: 'Anos de Excelência',
-    detail: 'Fundada em 2015 em Anápolis'
+    number: '2015',
+    label: 'Desde',
+    detail: 'Atuação em Anápolis'
   },
   {
     number: '+5.000',
     label: 'Procedimentos Realizados',
-    detail: 'Satisfação comprovada'
+    detail: 'Procedimentos realizados'
   },
   {
     number: '5.0 ★',
@@ -584,9 +584,9 @@ export const FAQS = [
       'Estamos localizados estrategicamente na Av. Patrícia, Quadra 5A, Lote 01, no Adriana Parque – região do Grande Jaiara em Anápolis/GO. É um local de fácil acesso, com vagas e ambiente muito tranquilo.'
   },
   {
-    question: 'A Criolipólise realmente elimina gordura para sempre?',
+    question: 'O que esperar da Criolipólise?',
     answer:
-      'Sim! As células de gordura submetidas ao resfriamento controlado sofrem apoptose (morte programada) e são eliminadas naturalmente pelo organismo ao longo de 30 a 90 dias, não retornando para aquela área.'
+      'A criolipólise pode promover redução de gordura localizada na área tratada por meio do resfriamento controlado. A indicação, a resposta ao protocolo e o tempo de percepção dos resultados variam de pessoa para pessoa e devem ser avaliados individualmente.'
   },
   {
     question: 'Quais são as formas de pagamento aceitas?',
