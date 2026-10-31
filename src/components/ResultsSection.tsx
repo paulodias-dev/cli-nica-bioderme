@@ -1,13 +1,36 @@
-import React, { useState } from 'react';
-import { Sparkles, MessageCircle, CheckCircle, Eye } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Sparkles, MessageCircle, CheckCircle, X, ZoomIn } from 'lucide-react';
 import { RESULTS, createWhatsAppUrl } from '../data/landingData';
 
 export const ResultsSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<'all' | 'corporal' | 'laser' | 'facial'>('all');
+  const [selectedResult, setSelectedResult] = useState<typeof RESULTS[number] | null>(null);
+  const [comparisonPosition, setComparisonPosition] = useState(50);
 
   const filteredResults = activeCategory === 'all'
     ? RESULTS
     : RESULTS.filter((res) => res.category === activeCategory);
+
+  useEffect(() => {
+    if (!selectedResult) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setSelectedResult(null);
+    };
+
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectedResult]);
+
+  const openResult = (result: typeof RESULTS[number]) => {
+    setComparisonPosition(50);
+    setSelectedResult(result);
+  };
 
   return (
     <section id="resultados" className="py-16 md:py-24 bg-white scroll-mt-20">
@@ -58,30 +81,46 @@ export const ResultsSection: React.FC = () => {
               {/* Images Container (Before & After Side by Side) */}
               <div className="relative grid grid-cols-2 gap-1 bg-stone-200 p-2">
                 {/* Before Image */}
-                <div className="relative aspect-4/3 overflow-hidden rounded-2xl bg-stone-100">
+                <button
+                  type="button"
+                  onClick={() => openResult(item)}
+                  aria-label={`Ampliar resultado de ${item.title}`}
+                  className="relative aspect-4/3 overflow-hidden rounded-2xl bg-stone-100 text-left cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8f245c] focus-visible:ring-offset-2"
+                >
                   <img
                     src={item.beforeImg}
                     alt={`${item.title} - Antes`}
-                    className="w-full h-full object-cover grayscale-30 group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain grayscale-30 group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                   <div className="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-md bg-stone-900/80 backdrop-blur-xs text-white text-[11px] font-bold uppercase tracking-wider">
                     Antes
                   </div>
-                </div>
+                  <div className="absolute top-2 right-2 flex items-center gap-1 rounded-full bg-white/90 px-2 py-1 text-[10px] font-semibold text-stone-700 opacity-0 shadow-sm transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
+                    <ZoomIn className="h-3 w-3" /> Ampliar
+                  </div>
+                </button>
 
                 {/* After Image */}
-                <div className="relative aspect-4/3 overflow-hidden rounded-2xl bg-stone-100">
+                <button
+                  type="button"
+                  onClick={() => openResult(item)}
+                  aria-label={`Ampliar resultado de ${item.title}`}
+                  className="relative aspect-4/3 overflow-hidden rounded-2xl bg-stone-100 text-left cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8f245c] focus:ring-inset"
+                >
                   <img
                     src={item.afterImg}
                     alt={`${item.title} - Depois`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                   <div className="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-md bg-[#8f245c] text-white text-[11px] font-bold uppercase tracking-wider shadow-sm">
                     Depois ✨
                   </div>
-                </div>
+                  <div className="absolute top-2 right-2 flex items-center gap-1 rounded-full bg-white/90 px-2 py-1 text-[10px] font-semibold text-stone-700 opacity-0 shadow-sm transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
+                    <ZoomIn className="h-3 w-3" /> Ampliar
+                  </div>
+                </button>
 
                 {/* Top Badge */}
                 <div className="absolute top-4 left-4 z-10">
@@ -151,6 +190,102 @@ export const ResultsSection: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {selectedResult && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-stone-950/85 p-4 backdrop-blur-sm sm:p-8"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="result-dialog-title"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setSelectedResult(null);
+          }}
+        >
+          <div className="relative w-full max-w-5xl overflow-hidden rounded-3xl bg-[#FAF8F5] shadow-2xl">
+            <button
+              type="button"
+              onClick={() => setSelectedResult(null)}
+              aria-label="Fechar visualização ampliada"
+              className="absolute right-3 top-3 z-20 rounded-full bg-stone-900/75 p-2 text-white transition-colors hover:bg-stone-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            >
+              <X className="h-5 w-5" />
+            </button>
+
+            <div className="p-5 pb-4 sm:p-7 sm:pb-5">
+              <div className="mb-4 pr-10">
+                <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#8f245c]">
+                  Comparação detalhada
+                </p>
+                <h3 id="result-dialog-title" className="text-2xl font-bold text-stone-900">
+                  {selectedResult.title}
+                </h3>
+                <p className="mt-1 text-sm text-stone-600">
+                  Arraste o controle para comparar o antes e o depois.
+                </p>
+              </div>
+
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-stone-200 select-none">
+                <img
+                  src={selectedResult.afterImg}
+                  alt={`${selectedResult.title} - Depois ampliado`}
+                  className="absolute inset-0 h-full w-full object-contain"
+                />
+
+                <div
+                  className="absolute inset-y-0 left-0 overflow-hidden border-r-2 border-white shadow-[4px_0_12px_rgba(0,0,0,0.18)]"
+                  style={{ width: `${comparisonPosition}%` }}
+                >
+                  <img
+                    src={selectedResult.beforeImg}
+                    alt={`${selectedResult.title} - Antes ampliado`}
+                    className="absolute inset-0 h-full w-full max-w-none object-contain"
+                    style={{ width: `${100 / (comparisonPosition / 100 || 1)}%` }}
+                  />
+                </div>
+
+                <div className="pointer-events-none absolute inset-x-0 bottom-3 flex justify-between px-3 text-[11px] font-bold uppercase tracking-wider text-white">
+                  <span className="rounded-md bg-stone-900/80 px-2.5 py-1">Antes</span>
+                  <span className="rounded-md bg-[#8f245c]/90 px-2.5 py-1">Depois ✨</span>
+                </div>
+
+                <div
+                  className="pointer-events-none absolute inset-y-0 flex w-8 -translate-x-1/2 items-center justify-center"
+                  style={{ left: `${comparisonPosition}%` }}
+                >
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-[#8f245c] text-lg font-bold text-white shadow-lg">
+                    ↔
+                  </span>
+                </div>
+
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={comparisonPosition}
+                  onChange={(event) => setComparisonPosition(Number(event.target.value))}
+                  aria-label="Posição do comparador entre antes e depois"
+                  className="absolute inset-0 h-full w-full cursor-ew-resize opacity-0"
+                />
+              </div>
+
+              <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+                <span className="rounded-full bg-[#8f245c]/10 px-3 py-1.5 text-xs font-semibold text-[#8f245c]">
+                  {selectedResult.sessions}
+                </span>
+                <a
+                  href={createWhatsAppUrl(`Olá! Vi os resultados de ${selectedResult.title} e gostaria de agendar uma avaliação.`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#8f245c] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#731a49]"
+                >
+                  <MessageCircle className="h-4 w-4 fill-current" />
+                  Quero um resultado assim
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

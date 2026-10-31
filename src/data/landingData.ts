@@ -19,29 +19,29 @@ export const PROCEDURES: Procedure[] = [
     category: 'facial',
     categoryLabel: 'Facial',
     description:
-      'A limpeza de pele é um dos tratamentos mais básicos e essenciais para manter a sua pele saudável, removendo impurezas e renovando as células.',
+      'A limpeza de pele é um protocolo fundamental de cuidado e saúde da pele, realizado de forma personalizada para remover impurezas, desobstruir os poros e recuperar o viço facial.',
     benefits: [
-      'Remoção de cravos e impurezas profundas',
-      'Desobstrução dos poros e controle de oleosidade',
-      'Renovação celular e toque aveludado',
-      'Prevenção de acnes e envelhecimento precoce'
+      'Higienização profunda e remoção cuidadosa de cravos e impurezas',
+      'Desobstrução dos poros e auxílio no equilíbrio da oleosidade',
+      'Renovação da superfície da pele e melhora da textura',
+      'Preparo da pele para receber outros cuidados e protocolos'
     ],
     details: {
       headline: 'Por que escolher a Limpeza de Pele Bioderme?',
       intro:
-        'A limpeza de pele da Bioderme foi pensada para remover impurezas, células mortas e cravos, deixando a pele mais saudável, suave e radiante.',
+        'Na Bioderme, a limpeza de pele é tratada com a importância que ela merece: um protocolo completo, criterioso e personalizado, que respeita as necessidades de cada pele e contribui para sua saúde, equilíbrio e luminosidade.',
       reasonsTitle: 'Diferenciais do procedimento',
       reasons: [
-        'Equipe treinada em cuidados com a pele e protocolos personalizados.',
-        'Uso de produtos de alta qualidade para nutrir, revitalizar e proteger.',
-        'Tratamento adaptado às necessidades específicas de cada tipo de pele.',
-        'Ambiente tranquilo para transformar o cuidado facial em um momento de autocuidado.'
+        'Avaliação cuidadosa para definir as etapas adequadas ao seu tipo de pele.',
+        'Produtos de alta qualidade para higienizar, revitalizar e proteger.',
+        'Técnicas realizadas com segurança, conforto e atenção aos detalhes.',
+        'Protocolo que pode fazer parte da manutenção regular da saúde e da beleza facial.'
       ],
       experienceTitle: 'Depois da sessão',
       experience:
-        'A pele tende a apresentar textura mais suave, aparência mais clara e sensação renovada, destacando a beleza natural.',
+        'A pele tende a apresentar textura mais suave, poros desobstruídos, aparência mais uniforme e sensação de frescor, destacando sua luminosidade natural.',
       closing:
-        'Agende sua limpeza de pele e comece sua jornada para uma pele mais saudável, radiante e revitalizada.'
+        'Agende sua avaliação e descubra o protocolo de limpeza de pele mais adequado para manter sua pele saudável, equilibrada e radiante.'
     },
     imageUrl: '/assets/procedures/limpeza-de-pele.png',
     whatsappMessage:
@@ -525,10 +525,10 @@ export const RESULTS: ResultItem[] = [
     title: 'Limpeza de Pele & Renovação Facial',
     category: 'facial',
     description:
-      'Desobstrução profunda dos poros, alívio de comedões e renovação do viço e luminosidade.',
+      'Protocolo facial completo para higienizar profundamente, desobstruir os poros e devolver equilíbrio, textura uniforme e luminosidade à pele.',
     beforeImg: '/assets/results/limpeza-facial-antes.jpg',
     afterImg: '/assets/results/limpeza-facial-depois.jpg',
-    sessions: 'Sessão Única + Manutenção',
+    sessions: 'Protocolo Personalizado',
     tag: 'Pele Saudável'
   },
   {
