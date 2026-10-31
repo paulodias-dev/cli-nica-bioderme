@@ -44,7 +44,6 @@ export const PROCEDURES: Procedure[] = [
         'Agende sua limpeza de pele e comece sua jornada para uma pele mais saudável, radiante e revitalizada.'
     },
     imageUrl: '/assets/procedures/limpeza-de-pele.png',
-    recommendedSessions: 'Mensal ou bimestral',
     whatsappMessage:
       'Olá! Gostaria de agendar uma avaliação para Limpeza de Pele na Clínica Bioderme.'
   },
@@ -57,7 +56,7 @@ export const PROCEDURES: Procedure[] = [
       'A Criolipólise é projetada para eliminar as gorduras indesejadas por meio do resfriamento controlado de células adiposas.',
     benefits: [
       'Destruição seletiva e segura das células de gordura',
-      'Redução média de 20% a 30% da gordura na área tratada',
+      'Resultados visíveis nas áreas tratadas',
       'Tratamento não invasivo, sem cortes ou cirurgia',
       'Retorno imediato às atividades rotineiras'
     ],
@@ -79,7 +78,6 @@ export const PROCEDURES: Procedure[] = [
         'Agende sua avaliação para entender quais áreas podem ser tratadas e qual protocolo combina melhor com seu objetivo.'
     },
     imageUrl: '/assets/procedures/criolipolise.png',
-    recommendedSessions: '1 a 3 sessões por região',
     whatsappMessage:
       'Olá! Gostaria de saber mais sobre a Criolipólise e agendar minha avaliação na Clínica Bioderme.'
   },
@@ -92,7 +90,7 @@ export const PROCEDURES: Procedure[] = [
       'Procedimento seguro e eficaz para a remoção de pelos indesejados. Utilizamos tecnologia de ponta para direcionar a energia do laser às áreas-alvo, resultando em redução significativa e duradoura.',
     benefits: [
       'Tecnologia de alta eficácia com máxima segurança',
-      'Eliminação definitiva de até 90% dos pelos indesejados',
+      'Resultados duradouros na redução dos pelos',
       'Adeus à foliculite e manchas causadas por lâminas',
       'Pele lisa, macia e sem irritação constante'
     ],
@@ -114,7 +112,6 @@ export const PROCEDURES: Procedure[] = [
         'Fale com a Bioderme para montar um pacote de sessões adequado para sua pele e sua necessidade.'
     },
     imageUrl: '/assets/procedures/depilacao-a-laser.png',
-    recommendedSessions: 'Pacote personalizado (6 a 10 sessões)',
     whatsappMessage:
       'Olá! Quero agendar uma sessão ou avaliação de Depilação a Laser na Clínica Bioderme.'
   },
@@ -149,7 +146,6 @@ export const PROCEDURES: Procedure[] = [
         'Agende uma avaliação para conhecer o protocolo mais indicado para seu objetivo.'
     },
     imageUrl: '/assets/procedures/reducao-de-medidas.png',
-    recommendedSessions: 'Protocolos de 5 a 10 sessões',
     whatsappMessage:
       'Olá! Tenho interesse no protocolo de Redução de Medidas. Gostaria de agendar uma avaliação!'
   },
@@ -164,7 +160,7 @@ export const PROCEDURES: Procedure[] = [
       'Estímulo potente de colágeno e elastina',
       'Atenuação de cicatrizes de acne e linhas finas',
       'Uniformização do tom da pele e fechamento dos poros',
-      'Drug delivery com ativos específicos de alta pureza'
+      'Melhora da textura e da firmeza da pele'
     ],
     details: {
       headline: 'Revele sua beleza natural com Microagulhamento',
@@ -184,13 +180,12 @@ export const PROCEDURES: Procedure[] = [
         'Agende sua sessão de Microagulhamento e inicie um cuidado facial mais profundo e personalizado.'
     },
     imageUrl: '/assets/procedures/microagulhamento.png',
-    recommendedSessions: '3 a 5 sessões espaçadas',
     whatsappMessage:
       'Olá! Gostaria de agendar uma avaliação de Microagulhamento na Clínica Bioderme.'
   },
   {
-    id: 'reducao-de-celulites',
-    name: 'Redução de Celulites',
+    id: 'reducao-de-celulite',
+    name: 'Redução de Celulite',
     category: 'corporal',
     categoryLabel: 'Corporal',
     description:
@@ -219,22 +214,21 @@ export const PROCEDURES: Procedure[] = [
         'Agende sua avaliação para montar um plano de cuidado corporal focado nas suas queixas.'
     },
     imageUrl: '/assets/procedures/reducao-de-celulites.png',
-    recommendedSessions: 'Protocolo de 8 a 10 sessões',
     whatsappMessage:
-      'Olá! Gostaria de informações sobre o tratamento para Redução de Celulites na Clínica Bioderme.'
+      'Olá! Gostaria de informações sobre o tratamento para Redução de Celulite na Clínica Bioderme.'
   },
   {
-    id: 'enzimas-gordura',
-    name: 'Enzimas (Gordura Localizada)',
-    category: 'corporal',
-    categoryLabel: 'Corporal Avançado',
+    id: 'enzima',
+    name: 'Enzima',
+    category: 'injetaveis',
+    categoryLabel: 'Injetáveis',
     description:
-      'Método altamente eficaz na redução de gordura localizada, podendo ser aplicado em braços, coxas, flancos, papada, pochete e culotes.',
+      'Tratamentos com enzima para diferentes preocupações estéticas, personalizados de acordo com a necessidade de cada paciente.',
     benefits: [
-      'Aplicação pontual nas regiões mais difíceis de queimar',
-      'Quebra e eliminação natural dos adipócitos',
-      'Resultados visíveis em poucas semanas',
-      'Indicado para flancos, papada, abdômen e culotes'
+      'Técnicas atuais e seguras',
+      'Tratamento personalizado',
+      'Aplicação direcionada para a área avaliada',
+      'Recuperação geralmente simples'
     ],
     details: {
       headline: 'Tratamentos com enzimas para gordura localizada',
@@ -254,9 +248,8 @@ export const PROCEDURES: Procedure[] = [
         'Converse com a equipe Bioderme para avaliar se o tratamento com enzimas é indicado para você.'
     },
     imageUrl: '/assets/procedures/enzimas-gordura.png',
-    recommendedSessions: 'Sessões quinzenais personalizadas',
     whatsappMessage:
-      'Olá! Gostaria de saber mais sobre as Enzimas para Gordura Localizada e agendar minha avaliação.'
+      'Olá! Gostaria de saber mais sobre os tratamentos com Enzima e agendar minha avaliação.'
   },
   {
     id: 'tratamento-microvasos',
@@ -266,10 +259,10 @@ export const PROCEDURES: Procedure[] = [
     description:
       'Abordagem estética especializada para melhorar a aparência de áreas problemáticas com microvasos.',
     benefits: [
-      'Clareamento e secagem dos vasinhos visíveis (PEIM)',
-      'Recuperação da uniformidade e estética das pernas',
-      'Procedimento rápido e realizado em consultório',
-      'Sem necessidade de repouso prolongado'
+      'Melhora da aparência dos pequenos vasos',
+      'Pele com aspecto mais uniforme',
+      'Tratamento personalizado para cada região',
+      'Geralmente sem recuperação prolongada'
     ],
     details: {
       headline: 'Recupere a beleza da pele com Tratamento de Microvasos',
@@ -289,9 +282,110 @@ export const PROCEDURES: Procedure[] = [
         'Agende sua avaliação para verificar indicação, cuidados e número de sessões.'
     },
     imageUrl: '/assets/procedures/tratamento-microvasos.png',
-    recommendedSessions: 'Avaliação clínica prévia',
     whatsappMessage:
       'Olá! Gostaria de agendar uma avaliação para Tratamento de Microvasos na Clínica Bioderme.'
+  },
+  {
+    id: 'massagem-modeladora',
+    name: 'Massagem Modeladora',
+    category: 'corporal',
+    categoryLabel: 'Corporal',
+    description:
+      'A massagem modeladora é ideal para esculpir o corpo, reduzir medidas e melhorar a circulação sanguínea.',
+    benefits: [
+      'Auxílio na modelagem corporal',
+      'Pode contribuir para a redução de medidas',
+      'Estímulo da circulação sanguínea',
+      'Técnicas adaptadas às áreas tratadas'
+    ],
+    details: {
+      headline: 'Modele seu corpo com a Massagem Modeladora',
+      intro:
+        'A Massagem Modeladora utiliza técnicas corporais para trabalhar áreas específicas, contribuindo para a modelagem e a circulação.',
+      reasonsTitle: 'Por que escolher a Massagem Modeladora?',
+      reasons: [
+        'Atendimento adaptado às necessidades de cada paciente.',
+        'Técnicas direcionadas para áreas que precisam de atenção.',
+        'Pode ser associada a outros protocolos corporais.',
+        'Experiência focada em conforto e bem-estar.'
+      ],
+      experienceTitle: 'Sensação de cuidado e bem-estar',
+      experience:
+        'O procedimento proporciona um momento de cuidado corporal e pode ajudar a valorizar o contorno da região tratada.',
+      closing:
+        'Agende uma avaliação para conhecer o protocolo mais adequado para seu objetivo.'
+    },
+    imageUrl: '/assets/procedures/reducao-de-medidas.png',
+    whatsappMessage:
+      'Olá! Gostaria de saber mais sobre a Massagem Modeladora e agendar minha avaliação.'
+  },
+  {
+    id: 'tratamento-de-estrias',
+    name: 'Tratamento de Estrias',
+    category: 'corporal',
+    categoryLabel: 'Corporal',
+    description:
+      'Tratamentos eficazes para reduzir a aparência das estrias, melhorar a elasticidade da pele e promover a regeneração do colágeno.',
+    benefits: [
+      'Redução da aparência das estrias',
+      'Melhora da elasticidade da pele',
+      'Estímulo à regeneração do colágeno',
+      'Protocolo adaptado à região tratada'
+    ],
+    details: {
+      headline: 'Cuide da aparência das estrias com a Bioderme',
+      intro:
+        'O tratamento é planejado de acordo com as características da pele e das estrias, buscando melhorar sua aparência e elasticidade.',
+      reasonsTitle: 'Cuidado personalizado para sua pele',
+      reasons: [
+        'Avaliação da pele e da região a ser tratada.',
+        'Protocolo adaptado às necessidades de cada paciente.',
+        'Foco na melhora da textura e da aparência da pele.',
+        'Acompanhamento com orientações individualizadas.'
+      ],
+      experienceTitle: 'Pele mais uniforme',
+      experience:
+        'O cuidado busca suavizar a aparência das estrias e favorecer uma pele com textura mais uniforme.',
+      closing:
+        'Agende sua avaliação para entender o protocolo mais indicado para sua pele.'
+    },
+    imageUrl: '/assets/procedures/microagulhamento.png',
+    whatsappMessage:
+      'Olá! Gostaria de saber mais sobre o Tratamento de Estrias e agendar minha avaliação.'
+  },
+  {
+    id: 'drenagem-linfatica',
+    name: 'Drenagem Linfática',
+    category: 'corporal',
+    categoryLabel: 'Corporal',
+    description:
+      'A drenagem linfática é uma técnica suave que estimula o sistema linfático, ajudando a eliminar toxinas, reduzir a retenção de líquidos e melhorar a circulação.',
+    benefits: [
+      'Estímulo do sistema linfático',
+      'Auxílio na redução da retenção de líquidos',
+      'Melhora da circulação',
+      'Sensação de leveza e bem-estar'
+    ],
+    details: {
+      headline: 'Mais leveza e bem-estar com a Drenagem Linfática',
+      intro:
+        'A Drenagem Linfática utiliza movimentos suaves para estimular o sistema linfático e contribuir para a redução de inchaços.',
+      reasonsTitle: 'Benefícios da Drenagem Linfática',
+      reasons: [
+        'Técnica suave e confortável.',
+        'Pode auxiliar na redução da retenção de líquidos.',
+        'Contribui para melhorar a circulação.',
+        'Uma escolha excelente para promover bem-estar.'
+      ],
+      experienceTitle: 'Sensação de leveza',
+      experience:
+        'O procedimento favorece uma sensação de desinchaço, relaxamento e cuidado corporal.',
+      closing:
+        'Converse com a equipe Bioderme para saber se a Drenagem Linfática é indicada para você.'
+    },
+    imageUrl: '/assets/procedures/reducao-de-medidas.png',
+    whatsappMessage:
+      'Olá! Gostaria de saber mais sobre a Drenagem Linfática e agendar minha avaliação.'
   }
 ];
 

@@ -4,7 +4,7 @@ import { PROCEDURES, createWhatsAppUrl } from '../data/landingData';
 import { Procedure } from '../types';
 
 export const ProceduresSection: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState<'all' | 'facial' | 'corporal' | 'laser'>('all');
+  const [activeFilter, setActiveFilter] = useState<'all' | 'facial' | 'corporal' | 'laser' | 'injetaveis'>('all');
   const [selectedProcedure, setSelectedProcedure] = useState<Procedure | null>(null);
 
   const filteredProcedures = activeFilter === 'all'
@@ -55,7 +55,8 @@ export const ProceduresSection: React.FC = () => {
             { id: 'all', label: 'Todos os Procedimentos' },
             { id: 'facial', label: 'Estética Facial' },
             { id: 'corporal', label: 'Estética Corporal' },
-            { id: 'laser', label: 'Depilação a Laser' }
+            { id: 'laser', label: 'Depilação a Laser' },
+            { id: 'injetaveis', label: 'Injetáveis' }
           ].map((filter) => (
             <button
               key={filter.id}
@@ -130,12 +131,6 @@ export const ProceduresSection: React.FC = () => {
                       </ul>
                     </div>
 
-                    {proc.recommendedSessions && (
-                      <div className="pt-2 text-xs text-stone-500 flex items-center gap-1.5">
-                        <span className="font-semibold text-stone-700">Frequência recomendada:</span>
-                        <span>{proc.recommendedSessions}</span>
-                      </div>
-                    )}
                   </div>
                 </div>
 

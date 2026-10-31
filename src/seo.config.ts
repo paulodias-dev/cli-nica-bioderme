@@ -28,14 +28,14 @@ export const SEO_CONFIG = {
     type: "website",
     locale: "pt_BR",
     siteName: "Clínica Bioderme",
-    image: "https://biodermeestetica.com/bioderme-logo.svg"
+    image: "https://biodermeestetica.com/bioderme-logo.png"
   },
   twitter: {
     card: "summary_large_image",
     title: "Clínica Bioderme | Estética Avançada em Anápolis",
     description:
       "Mais de 8 anos transformando vidas com tratamentos faciais, corporais e depilação a laser de alta performance.",
-    image: "https://biodermeestetica.com/bioderme-logo.svg"
+    image: "https://biodermeestetica.com/bioderme-logo.png"
   },
   contact: {
     phone: "+55-62-99282-8274",
@@ -63,7 +63,7 @@ export const SEO_CONFIG = {
     "@context": "https://schema.org",
     "@type": "BeautySalon",
     "name": "Clínica Bioderme",
-    "image": "https://biodermeestetica.com/bioderme-logo.svg",
+    "image": "https://biodermeestetica.com/bioderme-logo.png",
     "@id": "https://biodermeestetica.com/",
     "url": "https://biodermeestetica.com/",
     "telephone": "+55-62-99282-8274",

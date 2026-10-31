@@ -1,7 +1,7 @@
 export interface Procedure {
   id: string;
   name: string;
-  category: 'facial' | 'corporal' | 'laser';
+  category: 'facial' | 'corporal' | 'laser' | 'injetaveis';
   categoryLabel: string;
   description: string;
   benefits: string[];
@@ -15,7 +15,6 @@ export interface Procedure {
     closing: string;
   };
   imageUrl: string;
-  recommendedSessions?: string;
   whatsappMessage: string;
 }
 
