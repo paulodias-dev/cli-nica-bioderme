@@ -193,7 +193,7 @@ export const ResultsSection: React.FC = () => {
 
       {selectedResult && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-stone-950/85 p-4 backdrop-blur-sm sm:p-8"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-stone-950/70 backdrop-blur-md sm:p-8"
           role="dialog"
           aria-modal="true"
           aria-labelledby="result-dialog-title"
@@ -201,30 +201,30 @@ export const ResultsSection: React.FC = () => {
             if (event.target === event.currentTarget) setSelectedResult(null);
           }}
         >
-          <div className="relative w-full max-w-5xl overflow-hidden rounded-3xl bg-[#FAF8F5] shadow-2xl">
+          <div className="relative flex h-[100dvh] w-full max-w-5xl flex-col overflow-y-auto rounded-none border border-white/35 bg-[#faf8f5]/85 shadow-[0_24px_80px_rgba(20,10,18,0.35),inset_0_1px_0_rgba(255,255,255,0.55)] backdrop-blur-2xl sm:h-auto sm:rounded-3xl">
             <button
               type="button"
               onClick={() => setSelectedResult(null)}
               aria-label="Fechar visualização ampliada"
-              className="absolute right-3 top-3 z-20 rounded-full bg-stone-900/75 p-2 text-white transition-colors hover:bg-stone-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              className="absolute right-3 top-3 z-20 rounded-full border border-white/30 bg-stone-900/55 p-2 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-stone-900/75 focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:right-4 sm:top-4"
             >
               <X className="h-5 w-5" />
             </button>
 
-            <div className="p-5 pb-4 sm:p-7 sm:pb-5">
-              <div className="mb-4 pr-10">
-                <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#8f245c]">
+            <div className="flex min-h-full flex-col p-3 pb-4 sm:block sm:min-h-0 sm:p-7 sm:pb-5">
+              <div className="mb-3 pr-12 sm:mb-4 sm:pr-10">
+                <p className="mb-0.5 text-[10px] font-semibold uppercase tracking-wider text-[#8f245c] sm:mb-1 sm:text-xs">
                   Comparação detalhada
                 </p>
-                <h3 id="result-dialog-title" className="text-2xl font-bold text-stone-900">
+                <h3 id="result-dialog-title" className="text-xl font-bold leading-tight text-stone-900 sm:text-2xl">
                   {selectedResult.title}
                 </h3>
-                <p className="mt-1 text-sm text-stone-600">
+                <p className="mt-1 hidden text-sm text-stone-600 sm:block">
                   Arraste o controle para comparar o antes e o depois.
                 </p>
               </div>
 
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-stone-200 select-none">
+              <div className="relative min-h-0 flex-1 aspect-[3/4] overflow-hidden rounded-2xl bg-stone-200 select-none sm:aspect-[4/3] sm:flex-none">
                 <img
                   src={selectedResult.afterImg}
                   alt={`${selectedResult.title} - Depois ampliado`}
@@ -243,7 +243,7 @@ export const ResultsSection: React.FC = () => {
                   />
                 </div>
 
-                <div className="pointer-events-none absolute inset-x-0 bottom-3 flex justify-between px-3 text-[11px] font-bold uppercase tracking-wider text-white">
+                <div className="pointer-events-none absolute inset-x-0 bottom-3 flex justify-between px-3 text-[10px] font-bold uppercase tracking-wider text-white sm:text-[11px]">
                   <span className="rounded-md bg-stone-900/80 px-2.5 py-1">Antes</span>
                   <span className="rounded-md bg-[#8f245c]/90 px-2.5 py-1">Depois ✨</span>
                 </div>
@@ -268,18 +268,19 @@ export const ResultsSection: React.FC = () => {
                 />
               </div>
 
-              <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
-                <span className="rounded-full bg-[#8f245c]/10 px-3 py-1.5 text-xs font-semibold text-[#8f245c]">
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2 sm:mt-5 sm:gap-3">
+                <span className="rounded-full bg-[#8f245c]/10 px-3 py-1.5 text-[11px] font-semibold text-[#8f245c] sm:text-xs">
                   {selectedResult.sessions}
                 </span>
                 <a
                   href={createWhatsAppUrl(`Olá! Vi os resultados de ${selectedResult.title} e gostaria de agendar uma avaliação.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#8f245c] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#731a49]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#8f245c] px-4 py-2.5 text-xs font-bold text-white transition-colors hover:bg-[#731a49] sm:px-5 sm:text-sm"
                 >
                   <MessageCircle className="h-4 w-4 fill-current" />
-                  Quero um resultado assim
+                  <span className="sm:hidden">Agendar avaliação</span>
+                  <span className="hidden sm:inline">Quero um resultado assim</span>
                 </a>
               </div>
             </div>
